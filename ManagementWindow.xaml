@@ -1,0 +1,27 @@
+﻿<Window x:Class="NTM.ManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NTM"
+        mc:Ignorable="d"
+        Title="管理员界面"  FontSize="24">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="Button_Course" Grid.Row="0" Width="200" Margin="10 5 10 5" Click="Button_Course_Click">课&#160;&#160;&#160;&#160;&#160;&#160;&#160;程</Button>
+        <Button x:Name="Button_Score" Grid.Row="1" Width="200"  Margin="10 5 10 5">分&#160;&#160;&#160;&#160;&#160;&#160;&#160;数</Button>
+        <Button x:Name="Button_Student" Grid.Row="2" Width="200" Margin="10 5 10 5">学&#160;&#160;&#160;&#160;&#160;&#160;&#160;生</Button>
+        <Button x:Name="Button_Take" Grid.Row="3" Width="200" Margin="10 5 10 5">选&#160;&#160;&#160;&#160;&#160;&#160;&#160;课</Button>
+        <Button x:Name="Button_Teach" Grid.Row="4" Width="200" Margin="10 5 10 5">上&#160;&#160;&#160;&#160;&#160;&#160;&#160;课</Button>
+        <Button x:Name="Button_Teacher" Grid.Row="5" Width="200" Margin="10 5 10 5" Click="Button_Teacher_Click">教&#160;&#160;&#160;&#160;&#160;&#160;&#160;师</Button>
+        <Button x:Name="Button_User" Grid.Row="6" Width="200" Margin="10 5 10 5">用&#160;&#160;&#160;&#160;&#160;&#160;&#160;户</Button>
+    </Grid>
+</Window>

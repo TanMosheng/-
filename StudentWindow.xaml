@@ -1,0 +1,94 @@
+﻿<Window x:Class="NTM.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NTM"
+        mc:Ignorable="d"
+        Title="学生界面" 
+        FontSize="24">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Grid.Column="0" Background="#CFCFCF"></Border>
+        <Border Grid.Row="0" Grid.Column="2" Background="#CFCFCF"></Border>
+        <Border Grid.Row="1" Grid.Column="1" Background="#CFCFCF"></Border>
+        <Border Grid.Row="1" Grid.Column="3" Background="#CFCFCF"></Border>
+        <Border Grid.Row="2" Grid.Column="0" Background="#CFCFCF"></Border>
+        <Border Grid.Row="2" Grid.Column="2" Background="#CFCFCF"></Border>
+        <Border Grid.Row="3" Grid.Column="1" Background="#CFCFCF"></Border>
+        <Border Grid.Row="3" Grid.Column="3" Background="#CFCFCF"></Border>
+        <!--分割线-->
+        <TextBlock  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center">姓名</TextBlock>
+        <TextBox x:Name="TextBox_Name" Background="#FFFFFF" BorderBrush="#FFFFFF" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >姓名</TextBox>
+        <TextBlock Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">学号</TextBlock>
+        <TextBox x:Name="TextBox_No" Background="#FFFFFF" BorderBrush="#FFFFFF" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >00000000</TextBox>
+        <!--分割线-->
+        <TextBlock  Grid.Row="1" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center">性别</TextBlock>
+        <TextBox x:Name="TextBox_Gender" Background="#CFCFCF" BorderBrush="#CFCFCF" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >鸡</TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">学院</TextBlock>
+        <TextBox x:Name="TextBox_Dept" Background="#CFCFCF" BorderBrush="#CFCFCF" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >偶像练习生</TextBox>
+        <!--分割线-->
+        <TextBlock  Grid.Row="2" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center">专业</TextBlock>
+        <TextBox x:Name="TextBox_Major" Background="#FFFFFF" BorderBrush="#FFFFFF" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >唱跳Rap篮球</TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">班级</TextBlock>
+        <TextBox x:Name="TextBox_Class" Background="#FFFFFF" BorderBrush="#FFFFFF" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" >000000</TextBox>
+        <!--分割线-->
+        <TextBlock  Grid.Row="3" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center">电话</TextBlock>
+        <Grid Grid.Row="3" Grid.Column="1"   >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="TextBox_Tel" Grid.Column="0"  Margin="10 5 5 5"  >1145141919810</TextBox>
+            <Button x:Name="Button_SetTel" Grid.Column="1" Margin="5 5 10 5"  Click="Button_SetTel_Click"    >更改</Button>
+        </Grid>
+        <TextBlock  Grid.Row="3" Grid.Column="2"  VerticalAlignment="Center" HorizontalAlignment="Center">密码</TextBlock>
+        <Grid Grid.Row="3" Grid.Column="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <PasswordBox x:Name="PasswordBox_Password" Grid.Column="0" Margin="10 5 5 5"  ></PasswordBox>
+            <Button x:Name="Button_SetPassword"   Grid.Column="1" Margin="5 5 10 5" Click="Button_SetPassword_Click"  >更改</Button>
+        </Grid>
+        <!--分割线-->
+        <Grid Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">课程编号</TextBlock>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">课程名</TextBlock>
+                <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">学分</TextBlock>
+                <TextBlock Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">学期</TextBlock>
+                <TextBlock Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">课时</TextBlock>
+                <TextBlock Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">状态</TextBlock>
+                
+            </Grid>
+        <ListBox x:Name="ListBox_Studies" Grid.Row="1" HorizontalContentAlignment="Stretch">
+            
+        </ListBox>
+        </Grid>
+    </Grid>
+</Window>

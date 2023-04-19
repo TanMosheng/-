@@ -1,0 +1,17 @@
+﻿<Window x:Class="NTM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FontSize="24"
+        Title="教务系统" >
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="用户名" Margin="10,10,10,10"/>
+            <TextBox x:Name="txtUsername" Width="200" Margin="50,5,50,10"/>
+
+            <TextBlock Text="密码" Margin="10,10,10,10"/>
+            <PasswordBox x:Name="txtPassword" Width="200" Margin="50,10,50,10"/>
+
+            <Button x:Name="btnLogin" Content="登录" Width="100" Height="30" Margin="50,20,50,20" Click="btnLogin_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
